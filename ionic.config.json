@@ -1,6 +1,8 @@
 {
   "name": "Android4-pages",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "9e3f6634"
 }
