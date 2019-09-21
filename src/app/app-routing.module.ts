@@ -6,6 +6,8 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   { path: 'firstpage', loadChildren: './pages/firstpage/firstpage.module#FirstpagePageModule' },
   { path: 'secondpage', loadChildren: './pages/secondpage/secondpage.module#SecondpagePageModule' },
+  { path: 'thirdpage', loadChildren: './pages/thirdpage/thirdpage.module#ThirdpagePageModule' },
+  { path: 'fourthpage', loadChildren: './pages/fourthpage/fourthpage.module#FourthpagePageModule' },
 ];
 
 @NgModule({
