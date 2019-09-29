@@ -19,6 +19,14 @@ const routes: Routes = [
       {
         path: 'second',
         loadChildren: '../secondpage/secondpage.module#SecondpagePageModule'
+      },
+      {
+        path: 'third',
+        loadChildren: '../thirdpage/thirdpage.module#ThirdpagePageModule'
+      },
+      {
+        path: 'fourth',
+        loadChildren: '../fourthpage/fourthpage.module#FourthpagePageModule'
       }
     ]
   },

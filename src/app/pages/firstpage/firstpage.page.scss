@@ -1,0 +1,33 @@
+.biglogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.item-margin {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+ion-input {
+    border-bottom: 1px solid grey;
+}
+
+.native-input.sc-ion-input-md {
+    padding-top: 0px var(--padding-top);
+}
+
+.smallLogo {
+    max-width: 15%;
+}
+
+.descText {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.paddText {
+    padding-top: 5%;
+}

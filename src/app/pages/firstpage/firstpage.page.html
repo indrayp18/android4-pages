@@ -1,12 +1,45 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>firstpage</ion-title>
+    <ion-title><img src="./assets/logo.png" class="smallLogo"></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <img src="./assets/logo.png" class="biglogo">
 
+  <ion-item lines="none" class="item-margin">
+    <ion-input type="text" placeholder="Enter Input" lines="bottom"></ion-input>
+    <ion-button>Button</ion-button>
+  </ion-item>
+
+  <ion-item lines="none" class="paddText">
+    <ion-textarea disabled readonly class="descText">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Odit cupiditate alias, quasi inventore, 
+      adipisci totam voluptatum dolores itaque voluptas reiciendis commodi sunt at quaerat quis quos, dignissimos nam eveniet amet.
+      <br><br>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Odit cupiditate alias, quasi inventore, 
+      adipisci totam voluptatum dolores itaque voluptas reiciendis commodi sunt at quaerat quis quos, dignissimos nam eveniet amet.
+    </ion-textarea>
+  </ion-item>
 </ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <ion-button size="small"><ion-icon name="arrow-round-back"></ion-icon></ion-button>
+      </ion-col>
+      <ion-col text-center>
+        <ion-button size="small"><ion-icon name="arrow-round-forward"></ion-icon></ion-button>
+      </ion-col>
+      <ion-col text-center>
+        <ion-button size="small">button</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

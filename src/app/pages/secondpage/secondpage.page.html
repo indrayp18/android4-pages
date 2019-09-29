@@ -1,12 +1,42 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>secondpage</ion-title>
+    <ion-title><img src="./assets/logo.png" class="smallLogo"></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <h1>secondpage</h1>
+  <br>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="ion-float-md-left">
+            <div>
+              <img src="./assets/avatar2.png" alt="thumbnail" class="thumbnail"/>
+            </div>
+          </ion-col>
+          <ion-col class="ion-float-md-right">
+            <div>
+              <p>ID :</p>
+              <p>KET :</p>
+            </div>
+          </ion-col>
+          <div id="view">
+              <ion-button slot="end" fill="outline" href="/menu/fourth" fill="clear">View</ion-button>
+          </div>
+        </ion-row>  
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-grid>
+      <ion-row center>
+        <ion-col text-center>
+          <ion-button fill="outline" href="/menu/third">Show All</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid> 
 </ion-content>
