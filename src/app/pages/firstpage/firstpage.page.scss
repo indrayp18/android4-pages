@@ -31,3 +31,9 @@ ion-input {
 .paddText {
     padding-top: 5%;
 }
+
+ion-footer {
+    &.footer-md::before {
+        background-image: none;
+    } 
+}

@@ -1,0 +1,15 @@
+.smalllogo {
+    width: 15%;
+    height: 10%;
+    
+}
+
+.thumbnail {
+    width: 25%;
+}
+
+ion-footer {
+    &.footer-md::before {
+        background-image: none;
+    } 
+}
