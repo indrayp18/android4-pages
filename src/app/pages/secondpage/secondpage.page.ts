@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular';
+import { ImageModalPage } from '../image-modal/image-modal.page';
+
 
 @Component({
   selector: 'app-secondpage',
@@ -7,9 +11,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondpagePage implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(
+    private router: Router,
+    private modalController: ModalController,
+    ) {
+    
   }
 
+  ngOnInit(){
+
+  }
+
+  goToHome() {
+    this.router.navigateByUrl('/menu/first')
+  }
+
+  openPreview(img) {
+    this.modalController.create({
+      component: ImageModalPage,
+      componentProps: {
+        img: img
+      }
+    }).then(modal => modal.present());
+  }
 }

@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="ion-padding">
   <h1>secondpage</h1>
   <br>
   <ion-card>
@@ -16,7 +16,7 @@
         <ion-row>
           <ion-col class="ion-float-md-left">
             <div>
-              <img src="./assets/avatar2.png" alt="thumbnail" class="thumbnail"/>
+              <img src="./assets/avatar2.png" alt="thumbnail" class="thumbnail" tappable (click)="openPreview(img)"/>
             </div>
           </ion-col>
           <ion-col class="ion-float-md-right">
@@ -34,7 +34,7 @@
   </ion-card>
   <ion-grid>
       <ion-row center>
-        <ion-col text-center>
+        <ion-col class="ion-text-center">
           <ion-button fill="outline" href="/menu/third">Show All</ion-button>
         </ion-col>
       </ion-row>

@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="ion-padding">
     <h1>thirdpage</h1>
     <br>
     <ion-card>
@@ -15,13 +15,13 @@
         <ion-grid>
           <ion-row>
             <ion-col>
-              <img src="../assets/avatar2.png" alt="thumbnail">
+              <img src="../assets/avatar2.png" alt="thumbnail" tappable (click)="openPreview(img)">
             </ion-col>
             <ion-col>
-              <img src="../assets/avatar2.png" alt="thumbnail">
+              <img src="../assets/avatar2.png" alt="thumbnail" tappable (click)="openPreview(img)">
             </ion-col>
             <ion-col>
-              <img src="../assets/avatar2.png" alt="thumbnail">
+              <img src="../assets/avatar2.png" alt="thumbnail" tappable (click)="openPreview(img)">
             </ion-col>
           </ion-row>
           <ion-row>
