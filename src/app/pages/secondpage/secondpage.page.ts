@@ -10,6 +10,8 @@ import { ImageModalPage } from '../image-modal/image-modal.page';
   styleUrls: ['./secondpage.page.scss'],
 })
 export class SecondpagePage implements OnInit {
+  
+  image = ['avatar1', 'avatar2', 'avatar3'];
 
   constructor(
     private router: Router,

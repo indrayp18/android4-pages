@@ -9,6 +9,8 @@ import { ImageModalPage } from '../image-modal/image-modal.page';
 })
 export class ThirdpagePage implements OnInit {
 
+  image = ['avatar1', 'avatar2', 'avatar3'];
+
   constructor(private modalController: ModalController) { }
 
   ngOnInit() {

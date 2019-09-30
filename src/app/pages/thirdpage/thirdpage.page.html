@@ -10,18 +10,18 @@
 <ion-content class="ion-padding">
     <h1>thirdpage</h1>
     <br>
-    <ion-card>
+    <ion-card *ngFor="let img of image">
       <ion-card-content>
         <ion-grid>
           <ion-row>
             <ion-col>
-              <img src="../assets/avatar2.png" alt="thumbnail" tappable (click)="openPreview(img)">
+              <img src="../assets/{{ img }}.png" alt="thumbnail" tappable (click)="openPreview(img)">
             </ion-col>
             <ion-col>
-              <img src="../assets/avatar2.png" alt="thumbnail" tappable (click)="openPreview(img)">
+              <img src="../assets/{{ img }}.png" alt="thumbnail" tappable (click)="openPreview(img)">
             </ion-col>
             <ion-col>
-              <img src="../assets/avatar2.png" alt="thumbnail" tappable (click)="openPreview(img)">
+              <img src="../assets/{{ img }}.png" alt="thumbnail" tappable (click)="openPreview(img)">
             </ion-col>
           </ion-row>
           <ion-row>

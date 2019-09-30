@@ -10,13 +10,13 @@
 <ion-content class="ion-padding">
   <h1>secondpage</h1>
   <br>
-  <ion-card>
+  <ion-card *ngFor="let img of image">
     <ion-card-content>
       <ion-grid>
         <ion-row>
           <ion-col class="ion-float-md-left">
             <div>
-              <img src="./assets/avatar2.png" alt="thumbnail" class="thumbnail" tappable (click)="openPreview(img)"/>
+              <img src="assets/{{ img }}.png" alt="thumbnail" class="thumbnail" tappable (click)="openPreview(img)"/>
             </div>
           </ion-col>
           <ion-col class="ion-float-md-right">

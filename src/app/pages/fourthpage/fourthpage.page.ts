@@ -9,7 +9,10 @@ import { ImageModalPage } from '../image-modal/image-modal.page';
 })
 export class FourthpagePage implements OnInit {
 
-  constructor(private modalController: ModalController) { }
+  img: any;
+  
+  constructor(
+    private modalController: ModalController) { }
 
   ngOnInit() {
   }
