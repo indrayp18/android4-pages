@@ -10,7 +10,7 @@
 <ion-content class="ion-padding">
     <h1>thirdpage</h1>
     <br>
-    <ion-card *ngFor="let img of image">
+    <ion-card *ngFor="let img of image" (click)="goToFourth()">
       <ion-card-content>
         <ion-grid>
           <ion-row>
